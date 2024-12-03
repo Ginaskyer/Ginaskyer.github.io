@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #87CEEB;
+            border-bottom: 1px solid #ccc;
+        }
+        /* 使用 Flexbox 布局 */
+        .education-container {
+            display: flex;
+            justify-content: space-between; /* 两个元素之间有间隔 */
+            width: 60%;
+        }
+        .degree {
+            color: #6b6b6ba6;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 10px;
+            width: 40%; /* degree 占 60% */
+        }
+        .major {
+            color: #010101a6;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 10px;
+            width: 60%; /* major 占 40% */
+        }
+        .related_courses {
+            color: #010101a6;
+            margin-bottom: 10px;
+            font-size: 15px;
+            padding: 10px 10px;
+            box-shadow: 2px 0 5px rgba(97, 198, 252, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Southeast University (Nanjing, Jiangsu, China)</h2>
+    
+    <!-- 用一个父容器包裹 degree 和 major -->
+    <div class="education-container">
+        <div class="degree">Bachelor of Engineer    |</div>
+        <div class="major">Computer Science and Technology</div>
+    </div>
+    
+    <div class="education-container">
+        <div class="degree">Bachelor of Engineer    |</div>
+        <div class="major">Highway and Bridge Engineer(Civil Engineer)</div>
+    </div>
+
+    <div class="related_courses">Related Courses: Data Structure and Algorithm; Operating System; Software Engineer</div>
+
+    <p></p>
+
+    <h2>New York University (New York, United States)</h2>
+    
+    <!-- 用一个父容器包裹 degree 和 major -->
+    <div class="education-container">
+        <div class="degree">Master of Science    |</div>
+        <div class="major">Computer Engineer</div>
+    </div>
+    <div class="related_courses">Related Courses: Data Structure and Algorithm; Internet Architecture and Protocol; Embedded System</div>
+
+</body>
+</html>

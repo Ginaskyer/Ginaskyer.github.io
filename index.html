@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative; /* 使标题和图片可以层叠 */
+            width: 100%; /* 设置宽度为100% */
+            height: 150px; /* 设置一个固定高度 */
+            background-color: #d6d6d6b7;
+            color: #04b063; /* 浅蓝色 */
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        header img {
+            position: absolute; /* 让图片脱离常规流动 */
+            top: 0;
+            left: 0;
+            width: 100%;  /* 使图片宽度占满父容器 */
+            height: 100%;  /* 使图片高度占满父容器 */
+            object-fit: cover; /* 保持图片的宽高比，填充父容器 */
+            z-index: -1; /* 将图片置于背景层，标题文字在前 */
+        }
+        header span {
+            position: relative;
+            z-index: 1; /* 确保标题文本在图片之上 */
+            font-size: 42px;
+            line-height: 150px; /* 垂直居中标题 */
+        }
+        .contact {
+            color: rgba(77, 77, 77, 0.732);
+            text-align: center;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 130px);
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #9fd4ff6a;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(97, 198, 252, 0.1);
+        }
+        .sidebar a {
+            display: block;
+            color: #333;
+            font-size: 18px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px 10px;
+            text-align: center; /* 文字居中 */
+            border-bottom: 1px solid #ccc; /* 添加灰色分割线 */
+        }
+        .sidebar a:hover {
+            color: #4CAF50; /* 悬停时绿色高亮 */
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <span>Xingyu Liu -- STAR Space</span>
+      <img src="meteor.png" alt="Meteor">
+    </header>
+    <div class="contact">Contact: Skyer_L-AU2024@outlook.com</div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="./first_edu.html" target="content-frame">Education Background</a>
+            <a href="./projects.html" target="content-frame">Project Summary</a>
+        </div>
+        <div class="content">
+            <iframe src="./first_edu.html" name="content-frame"></iframe>
+        </div>
+    </div>
+  </body>
+</html>
